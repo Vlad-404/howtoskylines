@@ -1,26 +1,20 @@
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 function Navbar({title}) {
   return (
     <nav className="navbar mb-12 shadow-lg bg-neutral text-neutral-content">
-      <div className="container mx-auto">
-        <div className="flex-none px-2 mx-2">
-          {/* <Link to="/" className="text-lg font-bold align-middle">
+      <div className="container px-6 bg-blue-300">
+        <div className="flex-none px-2 bg-green-500">
+          <Link to="/" className="text-lg font-bold align-middle">
             { title }
-          </Link> */}
+          </Link>
         </div>
-        <div className="flex-1 px-2 mx-2">
+        <div className="flex-1 px-2 bg-orange-400">
           <div className="flex justify-end">
-            <p>Link 1</p>
-            <p>Link 2</p>
-            <p>Link 3</p>
-            {/* <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
+            <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
               Home
-            </Link> */}
-            {/* <Link to="/about" className="btn btn-ghost btn-sm rounded-btn">
-              About
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>
