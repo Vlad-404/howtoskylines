@@ -9,6 +9,7 @@ import Tips from './pages/Tips';
 
 // Components
 import Navbar from './components/layout/Navbar';
+import Cityentry from './components/tips/Cityentry';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/*" element={<NotFound />}/>
             <Route path="/tips" element={<Tips />}/>
+            <Route path="/tips/cityentry" element={<Cityentry />}/>
           </Routes>
         </main>
       </div>
