@@ -16,7 +16,7 @@ function App() {
       <div className="flex flex-col h-screen">
         <Navbar />
 
-        <main className="container mx-auto px-3 pb-12">
+        <main className="container w-screen pb-12">
           <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/*" element={<NotFound />}/>

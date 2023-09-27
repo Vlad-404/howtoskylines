@@ -1,6 +1,19 @@
+import Sidenav from "../components/layout/Sidenav";
+import Tipwindow from "../components/layout/Tipwindow";
+
 function Tips() {
     return(
-        <h2>Tips route is working!</h2>
+        <article className="w-screen min-h-96">
+            <div className="flex flex-row">
+                <div className="w-1/4 border-r border-slate-300 px-3">
+                    <Sidenav />
+                </div>
+                <div className="w-3/4 px-10">
+                    <Tipwindow />
+                </div>
+            </div>
+
+        </article>
     )
 };
 
