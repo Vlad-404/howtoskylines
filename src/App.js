@@ -5,6 +5,7 @@ import './App.css';
 // Pages
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Tips from './pages/Tips';
 
 // Components
 import Navbar from './components/layout/Navbar';
@@ -12,13 +13,14 @@ import Navbar from './components/layout/Navbar';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col justify-between h-screen">
+      <div className="flex flex-col h-screen">
         <Navbar />
 
         <main className="container mx-auto px-3 pb-12">
           <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/*" element={<NotFound />}/>
+            <Route path="/tips" element={<Tips />}/>
           </Routes>
         </main>
       </div>

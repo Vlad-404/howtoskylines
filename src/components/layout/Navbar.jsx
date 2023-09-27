@@ -15,6 +15,9 @@ function Navbar({title}) {
             <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
               Home
             </Link>
+            <Link to="/tips" className="btn btn-ghost btn-sm rounded-btn">
+              Tips
+            </Link>
           </div>
         </div>
       </div>
