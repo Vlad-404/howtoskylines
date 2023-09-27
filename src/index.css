@@ -3,7 +3,41 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --midnightGreen: #104F55;
+    --ivory: #F9F9ED;
+    --moonstone: #58A4B0;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: var(--ivory);
+}
+
+.text-darkgreen {
+    color: var(--midnightGreen);
+}
+
+.bg-darkgreen {
+    background-color: var(--midnightGreen);
+}
+
+.text-ivory {
+    color: var(--ivory);
+}
+
+.bg-ivory {
+    background-color: var(--ivory);
+}
+
+.text-moonstone {
+    color: var(--moonstone);
+}
+
+.bg-moonstone {
+    background-color: var(--moonstone);
 }
