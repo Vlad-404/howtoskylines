@@ -14,7 +14,7 @@ import Cityentry from './components/tips/Cityentry';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col h-screen dark:bg-slate-800 dark:text-white">
+      <div className="flex flex-col h-screen dark:bg-slate-800 dark:text-white bg-white text-black">
         <Navbar />
 
         <main className="w-screen pb-12">
