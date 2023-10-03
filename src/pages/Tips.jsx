@@ -3,7 +3,7 @@ import Tipwindow from "../components/layout/Tipwindow";
 
 function Tips() {
     return(
-        <article className="w-screen min-h-96">
+        <article className="w-screen min-h-96 pt-16">
             <div className="flex flex-row">
                 <div className="w-1/4 border-r border-slate-300 px-3">
                     <Sidenav />
