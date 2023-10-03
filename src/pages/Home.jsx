@@ -2,7 +2,7 @@ function Home() {
     return (
       <>
         <div className="px-5 md:px-20">
-          <h1 className="text-3xl font-bold text-darkgreen text-center">
+          <h1 className="text-3xl font-bold text-darkgreen text-center dark:text-white">
               Welcome to How To Skylines
           </h1>
           <p class="text-justify mt-10">
