@@ -1,5 +1,8 @@
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
+import setMode from '../../util/darkMode'
+
+setMode();
 
 function Navbar({title}) {
   return (
@@ -18,6 +21,7 @@ function Navbar({title}) {
             <Link to="/tips" className="btn btn-ghost btn-sm rounded-btn">
               Tips
             </Link>
+            <input type="checkbox" role="switch" className=""/>
           </div>
         </div>
       </div>
