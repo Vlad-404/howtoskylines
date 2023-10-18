@@ -10,6 +10,7 @@ import Tips from './pages/Tips';
 // Components
 import Navbar from './components/layout/Navbar';
 import Cityentry from './components/tips/Cityentry';
+import StartingBudget from './components/tips/StartingBudget';
 
 function App() {
   return (
@@ -19,10 +20,11 @@ function App() {
 
         <main className="w-screen pb-12">
           <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/*" element={<NotFound />}/>
-            <Route path="/tips" element={<Tips />}/>
-            <Route path="/tips/cityentry" element={<Cityentry />}/>
+            <Route index element={<Home />} />
+            <Route path="tips" element={<Tips />}/>
+            <Route path="tips/cityentry" element={<Cityentry />}/>
+            <Route path="tips/startingbudget" element={<StartingBudget />}/>
+            <Route path="*" element={<NotFound />}/>
           </Routes>
         </main>
       </div>

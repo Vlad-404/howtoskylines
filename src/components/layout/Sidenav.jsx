@@ -1,7 +1,9 @@
 function Sidenav() {
     return (
         <div>
-            <h1 className="mb-2 font-bold text-xl">Navigation</h1>
+            <h1 className="mb-2 font-bold text-xl">
+                <a href="/tips">Navigation</a>
+            </h1>
             <p className="text-sm pb-3">
                 Use the links below to quickly jump from one topic to another:
             </p>
@@ -12,7 +14,7 @@ function Sidenav() {
                     </a>
                 </li>
                 <li className="pb-2">
-                    <a href="/tips/cityentry">
+                    <a href="/tips/startingbudget">
                         - Starting Budget
                     </a>
                 </li>
