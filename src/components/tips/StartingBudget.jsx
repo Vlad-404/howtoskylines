@@ -2,7 +2,7 @@ import Sidenav from "../layout/Sidenav";
 
 function StartingBudget() {
     return(
-        <article className="w-screen min-h-96 pt-16">
+        <article className="w-screen pt-16">
             <div className="flex flex-row">
                 <div className="w-1/4 xl:pl-[10rem] border-r border-slate-300 px-3">
                     <Sidenav />

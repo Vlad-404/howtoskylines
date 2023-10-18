@@ -2,12 +2,12 @@ import Sidenav from "../layout/Sidenav";
 
 function Cityentry() {
     return(
-        <article className="w-screen min-h-96 pt-16">
+        <article className="w-screen pt-16">
             <div className="flex flex-row">
-                <div className="w-1/4 border-r border-slate-300 px-3">
+                <div className="w-1/4 xl:pl-[10rem] border-r border-slate-300 px-3">
                     <Sidenav />
                 </div>
-                <div className="w-3/4 px-5">
+                <div className="w-3/4 xl:w-1/2 px-5">
                     <div className="px-5 prose max-w-none text-black dark:text-white">
                         <h2 className="px-10 mb-10 dark:text-white text-black">Connection to the highway</h2>
                         <p className="text-justify">
