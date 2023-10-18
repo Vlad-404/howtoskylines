@@ -15,7 +15,7 @@ import StartingBudget from './components/tips/StartingBudget';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col h-screen dark:bg-slate-800 dark:text-white bg-white text-black">
+      <div className="flex flex-col h-min-screen dark:bg-slate-800 dark:text-white bg-white text-black">
         <Navbar />
 
         <main className="w-screen pb-12">
