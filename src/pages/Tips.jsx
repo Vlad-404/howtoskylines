@@ -5,12 +5,8 @@ function Tips() {
     return(
         <article className="w-screen min-h-96 pt-16">
             <div className="flex flex-row">
-                <div className="w-1/4 border-r border-slate-300 px-3">
-                    <Sidenav />
-                </div>
-                <div className="w-3/4 px-5">
-                    <Tipwindow />
-                </div>
+                <Sidenav />
+                <Tipwindow />
             </div>
 
         </article>
