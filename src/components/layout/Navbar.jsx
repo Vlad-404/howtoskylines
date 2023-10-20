@@ -13,6 +13,14 @@ function Navbar({title}) {
     }
   }
 
+  function handleSwitch() {
+    let theme = localStorage.getItem('theme')
+
+    if (theme == 'dark') {
+      return true
+    }
+  }
+
   // Sets the light or dark mode by reading from browser settings or local storage
   function setTheme() {
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -47,7 +55,7 @@ function Navbar({title}) {
               </svg>
               
               {/* Dark mode toggle switch */}
-              <input type="checkbox" id="toggle-dark" role="switch" className="toggle ml-2" onClick={handleDarkToggle}/>
+              <input type="checkbox" id="toggle-dark" role="switch" className="toggle ml-2" onClick={handleDarkToggle} {handleSwitch}/>
               
               {/* Moon icon for dark mode toggle - source Heroicons: https://heroicons.com/ */}
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="ml-2 w-4 h-4">
