@@ -21,9 +21,10 @@ function App() {
         <main className="w-screen pb-12">
           <Routes>
             <Route index element={<Home />} />
-            <Route path="tips" element={<Tips />}/>
-            <Route path="tips/cityentry" element={<Cityentry />}/>
-            <Route path="tips/startingbudget" element={<StartingBudget />}/>
+              <Route path="tips" element={<Tips />}/>
+              <Route path="tips/*" element={<Tips />}/>
+              {/*<Route path="tips/cityentry" element={<Cityentry />}/> 
+              <Route path="tips/startingbudget" element={<StartingBudget />}/>*/}
             <Route path="*" element={<NotFound />}/>
           </Routes>
         </main>
