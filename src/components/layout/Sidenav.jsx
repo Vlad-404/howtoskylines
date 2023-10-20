@@ -1,6 +1,6 @@
 function Sidenav() {
     return (
-        <div>
+        <div className="w-1/4 border-r border-slate-300 px-3">
             <h1 className="mb-2 font-bold text-xl">
                 <a href="/tips">Navigation</a>
             </h1>
