@@ -17,7 +17,7 @@ function Navbar({title}) {
     let theme = localStorage.getItem('theme')
 
     if (theme == 'dark') {
-      return true
+      return 'checked'
     }
   }
 
