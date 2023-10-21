@@ -11,6 +11,7 @@ import Tips from './pages/Tips';
 import Navbar from './components/layout/Navbar';
 import Cityentry from './components/tips/Cityentry';
 import StartingBudget from './components/tips/StartingBudget';
+// import Tipwindow from './components/layout/Tipwindow';
 
 function App() {
   return (
@@ -20,11 +21,14 @@ function App() {
 
         <main className="w-screen pb-12">
           <Routes>
-            <Route index element={<Home />} />
-            <Route path="tips" element={<Tips />}/>
-            <Route path="tips/cityentry" element={<Cityentry />}/>
-            <Route path="tips/startingbudget" element={<StartingBudget />}/>
-            <Route path="*" element={<NotFound />}/>
+            {/* route rendering: https://reactrouter.com/en/main/start/concepts#index-routes */}
+              <Route path="/" element={<Home />} />
+            
+              <Route path="/tips" element={<Tips/>} />
+              <Route path="/tips/cityentry" element={<Cityentry />} />
+              <Route path="/tips/startingbudget" element={<StartingBudget />} />
+
+              <Route path="/*" element={<NotFound />}/>
           </Routes>
         </main>
       </div>
