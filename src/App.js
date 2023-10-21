@@ -22,22 +22,13 @@ function App() {
         <main className="w-screen pb-12">
           <Routes>
             {/* route rendering: https://reactrouter.com/en/main/start/concepts#index-routes */}
-              {/* <Route path="/" element={<App />}>
-                  <Route index element={<Home />} />
-                  <Route path="tips" element={<Tips/>} >
-                      <Route path="cityentry" element={<Cityentry />} />
-                      <Route path="startingbudget" element={<StartingBudget />} />
-                      <Route index element={<Tipwindow />} />
-                  </Route>
-              </Route> */}
-                
-              {/* conditional rendering*/}
-              <Route index element={<Home />} />
-                <Route path="tips" element={<Tips />}/>
-                <Route path="tips/*" element={<Tips />}/>
-                <Route path="tips/cityentry" element={<Cityentry />}/> 
-                <Route path="tips/startingbudget" element={<StartingBudget />}/>
-              <Route path="*" element={<NotFound />}/>
+              <Route path="/" element={<Home />} />
+            
+              <Route path="/tips" element={<Tips/>} />
+              <Route path="/tips/cityentry" element={<Cityentry />} />
+              <Route path="/tips/startingbudget" element={<StartingBudget />} />
+
+              <Route path="/*" element={<NotFound />}/>
           </Routes>
         </main>
       </div>
