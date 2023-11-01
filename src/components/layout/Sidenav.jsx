@@ -13,12 +13,12 @@ function Sidenav() {
             </p>
             <ul>
                 <li className="pb-2">
-                    <Link to="/tips/cityentry">
+                    <Link to="tips/cityentry">
                         - Connection to the Highway
                     </Link>
                 </li>
                 <li className="pb-2">
-                    <Link to="/tips/startingbudget">
+                    <Link to="tips/startingbudget">
                         - Starting Budget
                     </Link>
                 </li>
