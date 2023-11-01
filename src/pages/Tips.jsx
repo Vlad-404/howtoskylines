@@ -12,7 +12,7 @@ import Tipwindow from "../components/layout/Tipwindow";
 //     let lastMember = urlArray.length - 1;
 //     let lastParam = urlArray[lastMember];
 
-//     // capitalizes the first letter to comply with React component formating
+//     // capitalizes the first letter to comply with React component formatting
 //     tip = lastParam.charAt(0).toUpperCase() + lastParam.slice(1);
 //     component = `<${tip} />`
 

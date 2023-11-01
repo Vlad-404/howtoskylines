@@ -14,7 +14,6 @@ function Navbar({title}) {
   }
 
   // Sets the light or dark mode by reading from browser settings or local storage
-
   function setTheme() {
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
