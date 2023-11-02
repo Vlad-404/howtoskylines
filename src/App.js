@@ -6,12 +6,11 @@ import './App.css';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Tips from './pages/Tips';
+import Cityentry from './components/tips/Cityentry';
+import StartingBudget from './components/tips/StartingBudget';
 
 // Components
 import Navbar from './components/layout/Navbar';
-import Cityentry from './components/tips/Cityentry';
-import StartingBudget from './components/tips/StartingBudget';
-// import Tipwindow from './components/layout/Tipwindow';
 
 function App() {
   return (
@@ -24,9 +23,10 @@ function App() {
             {/* route rendering: https://reactrouter.com/en/main/start/concepts#index-routes */}
               <Route path="/" element={<Home />} />
             
-              <Route path="/tips" element={<Tips/>} />
-              <Route path="/tips/cityentry" element={<Cityentry />} />
-              <Route path="/tips/startingbudget" element={<StartingBudget />} />
+              <Route path="/tips" element={<Tips/>} >
+                <Route path="/cityentry" element={<Cityentry />} />
+                <Route path="/startingbudget" element={<StartingBudget />} />
+              </Route>
 
               <Route path="/*" element={<NotFound />}/>
           </Routes>
