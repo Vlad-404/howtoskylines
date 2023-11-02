@@ -1,5 +1,3 @@
-import Sidenav from "../layout/Sidenav";
-
 function Cityentry() {
     return(
         <div className="w-3/4 xl:w-1/2 px-5">
@@ -27,10 +25,7 @@ function Cityentry() {
                     All of these entrance have good and bad sides. The most important thing to know is that you can always change this. For that reason, it is good to leave some extra space for the entrance, because it's not easy to demolish that level 5 house or business that's in the way of progress.
                 </p>
             </div>
-        </div>
-
-
-        
+        </div> 
     )
 };
 
