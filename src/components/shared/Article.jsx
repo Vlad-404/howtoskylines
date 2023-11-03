@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Sidenav from "../components/layout/Sidenav";
+import Sidenav from "../layout/Sidenav";
 
 function Article({ children }) {
     return (
@@ -12,7 +12,7 @@ function Article({ children }) {
     )
 }
 
-Card.protoTypes = {
+Article.protoTypes = {
     children: PropTypes.node.isRequired,
 }
 

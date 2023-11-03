@@ -24,8 +24,8 @@ function App() {
               <Route path="/" element={<Home />} />
             
               <Route path="/tips" element={<Tips/>} >
-                <Route path="/cityentry" element={<Cityentry />} />
-                <Route path="/startingbudget" element={<StartingBudget />} />
+                <Route path="cityentry" element={<Cityentry />} />
+                <Route path="startingbudget" element={<StartingBudget />} />
               </Route>
 
               <Route path="/*" element={<NotFound />}/>
