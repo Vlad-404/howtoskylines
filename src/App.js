@@ -19,16 +19,18 @@ function App() {
         <Navbar />
 
         <main className="w-screen pb-12">
-          <Routes>
+          <Routes path="/" element={<App />}>
             {/* route rendering: https://reactrouter.com/en/main/start/concepts#index-routes */}
-              <Route path="/" element={<Home />} />
-            
-              <Route path="tips" element={<Tips/>} >
-                <Route path="cityentry" element={<Cityentry/>} />
-                <Route path="startingbudget" element={<StartingBudget/>} />
-              </Route>
+                <Route index element={<Home />} />
+                {/* <Route path="tips" element={<Tips/>}>
+                  <Route path="cityentry" element={<Cityentry/>} />
+                  <Route path="startingbudget" element={<StartingBudget/>} />
+                </Route> */}
+                <Route path="tips" element={<Tips/>}/>
+                <Route path="tips/cityentry" element={<Cityentry/>} />
+                <Route path="tips/startingbudget" element={<StartingBudget/>}/>
 
-              <Route path="/*" element={<NotFound />}/>
+                <Route path="/*" element={<NotFound />}/>
           </Routes>
         </main>
       </div>
