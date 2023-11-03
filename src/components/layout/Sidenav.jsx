@@ -1,3 +1,6 @@
+import {Link} from 'react-router-dom'
+
+
 function Sidenav() {
     return (
         <aside  className="w-1/4 xl:pl-[10rem] border-r border-slate-300 px-3">
@@ -9,14 +12,14 @@ function Sidenav() {
             </p>
             <ul>
                 <li className="pb-2">
-                    <a href="/tips/cityentry">
+                    <Link to="/tips/cityentry">
                         - Connection to the Highway
-                    </a>
+                    </Link>
                 </li>
                 <li className="pb-2">
-                    <a href="/tips/startingbudget">
+                    <Link to="/tips/startingbudget">
                         - Starting Budget
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </aside>

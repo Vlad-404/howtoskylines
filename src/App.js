@@ -23,9 +23,9 @@ function App() {
             {/* route rendering: https://reactrouter.com/en/main/start/concepts#index-routes */}
               <Route path="/" element={<Home />} />
             
-              <Route path="/tips" element={<Tips/>} >
-                <Route path="cityentry" element={<Cityentry />} />
-                <Route path="startingbudget" element={<StartingBudget />} />
+              <Route path="tips" element={<Tips/>} >
+                <Route path="cityentry" element={<Cityentry/>} />
+                <Route path="startingbudget" element={<StartingBudget/>} />
               </Route>
 
               <Route path="/*" element={<NotFound />}/>
